@@ -25,8 +25,8 @@ if sys.platform == "win32":
     extra_objects.append(os.path.join(CURL_DIR, "lzo.lib"))
 else:
     libraries = ["lzo2"]
-    include_dirs.append("/usr/include/lzo")
-    ##library_dirs.append("/usr/local/lib")
+    include_dirs.append("/usr/local/include/lzo")
+    #library_dirs.append("/usr/local/lib")
     ##runtime_library_dirs.append("/usr/local/lib")
 
     # Add extra compile flag for MacOS X
